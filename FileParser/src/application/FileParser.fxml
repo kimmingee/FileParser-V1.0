@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FileParserController">
+   <children>
+      <Label alignment="CENTER" layoutX="32.0" layoutY="30.0" text="원본경로" />
+      <TextField fx:id="inFilePath" layoutX="90.0" layoutY="25.0" prefHeight="25.0" prefWidth="210.0" />
+      <Button fx:id="inFilePathBtn" layoutX="303.0" layoutY="26.0" mnemonicParsing="false" onAction="#inFilePathEvent" text="찾아보기" />
+      <Button layoutX="209.0" layoutY="218.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="82.0" text="시작" />
+      <TextField fx:id="fileNamePattern" layoutX="90.0" layoutY="60.0" prefHeight="25.0" prefWidth="210.0" />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="65.0" text="파일명필터" />
+      <Label alignment="CENTER" layoutX="34.0" layoutY="125.0" text="SET파일" />
+      <TextField fx:id="paserSetFileFullPath" layoutX="90.0" layoutY="120.0" prefHeight="25.0" prefWidth="210.0" />
+      <Button fx:id="paserSetFileFullPathBtn" layoutX="303.0" layoutY="121.0" mnemonicParsing="false" onAction="#paserSetFileFullPathEvent" text="찾아보기" />
+      <Label alignment="CENTER" layoutX="32.0" layoutY="160.0" text="결과경로" />
+      <TextField fx:id="outFilePath" layoutX="90.0" layoutY="155.0" prefHeight="25.0" prefWidth="210.0" />
+      <Button fx:id="outFilePathBtn" layoutX="303.0" layoutY="157.0" mnemonicParsing="false" onAction="#outFilePathEvent" text="찾아보기" />
+      <Separator layoutX="26.0" layoutY="270.0" prefHeight="3.0" prefWidth="449.0" />
+      <CheckBox fx:id="lowPathsInclude" layoutX="381.0" layoutY="30.0" mnemonicParsing="false" text="파위폴더 포함" />
+      <CheckBox fx:id="orignFilePathApply" layoutX="381.0" layoutY="161.0" mnemonicParsing="false" onAction="#orignFilePathApplyEvent" text="원본에 적용" />
+      <TextArea layoutX="26.0" layoutY="294.0" prefHeight="134.0" prefWidth="449.0" />
+   </children>
+</Pane>

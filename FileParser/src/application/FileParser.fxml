@@ -20,7 +20,7 @@
       <TextField fx:id="outFilePath" layoutX="90.0" layoutY="155.0" prefHeight="25.0" prefWidth="210.0" />
       <Button fx:id="outFilePathBtn" layoutX="303.0" layoutY="157.0" mnemonicParsing="false" onAction="#outFilePathEvent" text="찾아보기" />
       <Separator layoutX="26.0" layoutY="270.0" prefHeight="3.0" prefWidth="449.0" />
-      <CheckBox fx:id="lowPathsInclude" layoutX="381.0" layoutY="30.0" mnemonicParsing="false" text="파위폴더 포함" />
+      <CheckBox fx:id="lowPathsInclude" layoutX="381.0" layoutY="30.0" mnemonicParsing="false" onAction="#lowPathsIncludeEvent" text="파위폴더 포함" />
       <CheckBox fx:id="orignFilePathApply" layoutX="381.0" layoutY="161.0" mnemonicParsing="false" onAction="#orignFilePathApplyEvent" text="원본에 적용" />
       <TextArea layoutX="26.0" layoutY="294.0" prefHeight="134.0" prefWidth="449.0" />
    </children>

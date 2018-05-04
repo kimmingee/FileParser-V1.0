@@ -46,6 +46,16 @@ public class FileParserController {
 	}
 	
 	@FXML
+	protected void lowPathsIncludeEvent(ActionEvent event) {
+		Boolean lowPathInclude;
+		if(lowPathsInclude.isSelected()) {
+			lowPathInclude = true;
+		}else {
+			lowPathInclude = false;
+		}
+	}
+	
+	@FXML
 	protected void paserSetFileFullPathEvent(ActionEvent event) {
 		paserSetFileFullPathBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
 			@Override
@@ -77,8 +87,6 @@ public class FileParserController {
 		if(orignFilePathApply.isSelected()) {
 			inFilePath.setText(outFilePath.getText());
 			outFilePath.clear();
-		}else {
-			
 		}
 	}
 }
